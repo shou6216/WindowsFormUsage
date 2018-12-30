@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E3077A03-D8AB-4025-8E72-1408529097BB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WindowsFormUsage.My.MyApplication</StartupObject>
+    <StartupObject>WindowsFormUsage.MainRunner</StartupObject>
     <RootNamespace>WindowsFormUsage</RootNamespace>
     <AssemblyName>WindowsFormUsage</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -80,6 +80,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MainRunner.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
