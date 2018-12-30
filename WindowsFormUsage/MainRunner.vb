@@ -1,15 +1,22 @@
 ﻿Module MainRunner
+
+    Private Const ID_AAA As String = "AAA"
+
     <STAThread()>
     Sub Main(args As String())
         If args.Length = 0 Then
-            MsgBox("画面IDを指定してください。")
+            MsgBox("IDを指定してください。")
             Exit Sub
         End If
 
-        Dim screenId As String = args(0)
-
-        MsgBox(screenId)
-
-        Application.Run(New Form1)
+        Dim id As String = args(0)
+        Select Case id
+            Case ID_AAA
+                ' 画面AAA起動
+                Application.Run(New Form1)
+            Case Else
+                ' 指定IDがない場合
+                MsgBox("指定IDの画面はありません。")
+        End Select
     End Sub
 End Module
