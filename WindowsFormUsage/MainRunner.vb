@@ -1,6 +1,7 @@
 ﻿Module MainRunner
 
     Private Const ID_AAA As String = "AAA"
+    Private Const ID_BBB As String = "BBB"
 
     <STAThread()>
     Sub Main(args As String())
@@ -14,6 +15,9 @@
             Case ID_AAA
                 ' 画面AAA起動
                 Application.Run(New Form1)
+            Case ID_BBB
+                ' 画面BBB起動
+                Application.Run(New Form2)
             Case Else
                 ' 指定IDがない場合
                 MsgBox("指定IDの画面はありません。")
