@@ -1,4 +1,7 @@
 ﻿Public Class Form2
+
+    Private hogeDao As New HogeDao()
+
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' ListViewのItemを取得
         ListView1.View = View.Details
@@ -40,6 +43,39 @@
         End If
 
         Dim lvItem = ListView1.SelectedItems(0)
+        Dim id = lvItem.Text
         Console.WriteLine(lvItem.Text)
+
+        ' 取得情報更新
+        Dim hoge As Hoge = hogeDao.findById(id)
+        TextBox1.Text = hoge.h1
+        TextBox2.Text = hoge.h2
+        TextBox3.Text = hoge.h3
+        TextBox4.Text = hoge.h4
+        TextBox5.Text = hoge.h5
+        TextBox6.Text = hoge.h6
+        TextBox7.Text = hoge.h7
+        TextBox8.Text = hoge.h8
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+
+    End Sub
+
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+
+    End Sub
+
+    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
+
     End Sub
 End Class
