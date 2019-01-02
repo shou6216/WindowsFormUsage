@@ -23,21 +23,26 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,6 +62,70 @@ Partial Class Form2
         Me.Panel2.Size = New System.Drawing.Size(380, 179)
         Me.Panel2.TabIndex = 0
         '
+        'TextBox8
+        '
+        Me.TextBox8.Enabled = False
+        Me.TextBox8.Location = New System.Drawing.Point(113, 118)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox8.TabIndex = 9
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Enabled = False
+        Me.TextBox7.Location = New System.Drawing.Point(113, 93)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox7.TabIndex = 8
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Enabled = False
+        Me.TextBox6.Location = New System.Drawing.Point(113, 68)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox6.TabIndex = 7
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Enabled = False
+        Me.TextBox5.Location = New System.Drawing.Point(113, 43)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox5.TabIndex = 6
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Enabled = False
+        Me.TextBox4.Location = New System.Drawing.Point(7, 118)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox4.TabIndex = 5
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Enabled = False
+        Me.TextBox3.Location = New System.Drawing.Point(7, 93)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox3.TabIndex = 4
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Enabled = False
+        Me.TextBox2.Location = New System.Drawing.Point(7, 43)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox2.TabIndex = 3
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Location = New System.Drawing.Point(7, 68)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox1.TabIndex = 2
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -69,6 +138,11 @@ Partial Class Form2
         '
         'Panel3
         '
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.TextBox10)
+        Me.Panel3.Controls.Add(Me.ComboBox2)
+        Me.Panel3.Controls.Add(Me.ComboBox1)
+        Me.Panel3.Controls.Add(Me.TextBox9)
         Me.Panel3.Location = New System.Drawing.Point(12, 197)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(776, 180)
@@ -108,69 +182,36 @@ Partial Class Form2
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ListView"
         '
-        'TextBox1
+        'TextBox9
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(7, 68)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 19)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBox9.Location = New System.Drawing.Point(7, 101)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(121, 19)
+        Me.TextBox9.TabIndex = 0
         '
-        'TextBox2
+        'ComboBox1
         '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(7, 43)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 19)
-        Me.TextBox2.TabIndex = 3
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(7, 19)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 20)
+        Me.ComboBox1.TabIndex = 1
         '
-        'TextBox3
+        'ComboBox2
         '
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(7, 93)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 19)
-        Me.TextBox3.TabIndex = 4
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(7, 60)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 20)
+        Me.ComboBox2.TabIndex = 2
         '
-        'TextBox4
+        'TextBox10
         '
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(7, 118)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 19)
-        Me.TextBox4.TabIndex = 5
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Enabled = False
-        Me.TextBox5.Location = New System.Drawing.Point(113, 43)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 19)
-        Me.TextBox5.TabIndex = 6
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Enabled = False
-        Me.TextBox6.Location = New System.Drawing.Point(113, 68)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 19)
-        Me.TextBox6.TabIndex = 7
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Enabled = False
-        Me.TextBox7.Location = New System.Drawing.Point(113, 93)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 19)
-        Me.TextBox7.TabIndex = 8
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Enabled = False
-        Me.TextBox8.Location = New System.Drawing.Point(113, 118)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(100, 19)
-        Me.TextBox8.TabIndex = 9
+        Me.TextBox10.Enabled = False
+        Me.TextBox10.Location = New System.Drawing.Point(7, 141)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(121, 19)
+        Me.TextBox10.TabIndex = 3
         '
         'Form2
         '
@@ -185,6 +226,8 @@ Partial Class Form2
         Me.Text = "Form2"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -205,4 +248,8 @@ Partial Class Form2
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents ComboBox2 As ComboBox
 End Class
