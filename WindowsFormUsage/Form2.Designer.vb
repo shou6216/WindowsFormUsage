@@ -239,6 +239,7 @@ Partial Class Form2
         '
         'ListView1
         '
+        Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(7, 31)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(245, 145)
