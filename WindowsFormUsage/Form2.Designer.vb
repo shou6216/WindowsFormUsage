@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form2
     Inherits System.Windows.Forms.Form
 
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form2
     'メモ: 以下のプロシージャは Windows フォーム デザイナーで必要です。
     'Windows フォーム デザイナーを使用して変更できます。  
     'コード エディターを使って変更しないでください。
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
@@ -33,6 +33,10 @@ Partial Class Form2
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -139,6 +143,10 @@ Partial Class Form2
         'Panel3
         '
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.TextBox12)
+        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.TextBox11)
+        Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.TextBox10)
         Me.Panel3.Controls.Add(Me.ComboBox2)
         Me.Panel3.Controls.Add(Me.ComboBox1)
@@ -147,6 +155,40 @@ Partial Class Form2
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(776, 180)
         Me.Panel3.TabIndex = 1
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Enabled = False
+        Me.TextBox12.Location = New System.Drawing.Point(182, 62)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(118, 19)
+        Me.TextBox12.TabIndex = 7
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(5, 65)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(35, 12)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "入力2"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Enabled = False
+        Me.TextBox11.Location = New System.Drawing.Point(182, 19)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(118, 19)
+        Me.TextBox11.TabIndex = 5
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(5, 22)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(35, 12)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "入力1"
         '
         'TextBox10
         '
@@ -159,7 +201,7 @@ Partial Class Form2
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(7, 60)
+        Me.ComboBox2.Location = New System.Drawing.Point(46, 62)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 20)
         Me.ComboBox2.TabIndex = 2
@@ -167,7 +209,7 @@ Partial Class Form2
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(7, 19)
+        Me.ComboBox1.Location = New System.Drawing.Point(46, 19)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 20)
         Me.ComboBox1.TabIndex = 0
@@ -253,4 +295,8 @@ Partial Class Form2
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents Label4 As Label
 End Class

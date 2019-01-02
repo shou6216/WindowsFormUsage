@@ -44,7 +44,6 @@
 
         Dim lvItem = ListView1.SelectedItems(0)
         Dim id = lvItem.Text
-        Console.WriteLine(lvItem.Text)
 
         ' 取得情報更新
         Dim hoge As Hoge = hogeDao.findById(id)
@@ -58,6 +57,41 @@
         TextBox8.Text = hoge.h8
         TextBox10.Text = hoge.h9
 
+        ' 入力1の選択項目取得
+        ComboBox1.Items.Clear()
+        ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox1.Items.Add("input1" & id)
+        ComboBox1.Items.Add("input2" & id)
+        ComboBox1.Items.Add("input3" & id)
+        ComboBox1.Items.Add("input4" & id)
+
+        ' 入力系の名前クリア
+        ComboBox2.Items.Clear()
+        ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
+        TextBox11.Clear()
+        TextBox12.Clear()
     End Sub
 
+    ' 入力1の選択項目変更イベント
+    Private Sub ComboBox1_TextChanged(sender As Object, e As EventArgs) Handles ComboBox1.TextChanged
+        ' 入力1の選択項目名設定
+        Dim cbItem = ComboBox1.SelectedItem
+        TextBox11.Text = cbItem & "Name"
+
+        ' 入力2の選択項目取得
+        ComboBox2.Items.Clear()
+        ComboBox2.Items.Add("input1" & cbItem)
+        ComboBox2.Items.Add("input2" & cbItem)
+        ComboBox2.Items.Add("input3" & cbItem)
+        ComboBox2.Items.Add("input4" & cbItem)
+
+        ' 入力系の名前クリア
+        TextBox12.Clear()
+    End Sub
+
+    Private Sub ComboBox2_TextChanged(sender As Object, e As EventArgs) Handles ComboBox2.TextChanged
+        ' 入力2の選択項目名設定
+        Dim cbItem = ComboBox2.SelectedItem
+        TextBox12.Text = cbItem & "Name"
+    End Sub
 End Class
