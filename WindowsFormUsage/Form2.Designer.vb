@@ -45,8 +45,12 @@ Partial Class Form2
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -143,6 +147,7 @@ Partial Class Form2
         'Panel3
         '
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Controls.Add(Me.TextBox12)
         Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Controls.Add(Me.TextBox11)
@@ -216,13 +221,15 @@ Partial Class Form2
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(7, 101)
+        Me.TextBox9.Location = New System.Drawing.Point(46, 103)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(121, 19)
         Me.TextBox9.TabIndex = 2
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.Button2)
+        Me.Panel4.Controls.Add(Me.Button1)
         Me.Panel4.Location = New System.Drawing.Point(12, 390)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(776, 48)
@@ -257,6 +264,33 @@ Partial Class Form2
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ListView"
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(5, 106)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(35, 12)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "入力3"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(8, 13)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(111, 23)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "実行"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(662, 13)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(111, 23)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "閉じる"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -272,6 +306,7 @@ Partial Class Form2
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -300,4 +335,7 @@ Partial Class Form2
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
 End Class

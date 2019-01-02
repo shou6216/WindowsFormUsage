@@ -94,4 +94,23 @@
         Dim cbItem = ComboBox2.SelectedItem
         TextBox12.Text = cbItem & "Name"
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If (String.IsNullOrEmpty(TextBox11.Text) _
+                And String.IsNullOrEmpty(TextBox12.Text) _
+                And String.IsNullOrEmpty(TextBox9.Text)
+                ) Then
+            Me.Close()
+        End If
+
+        Dim closeResult As DialogResult = MessageBox.Show("閉じてもいい?",
+                                                     "確認",
+                                                     MessageBoxButtons.YesNo,
+                                                     MessageBoxIcon.Information,
+                                                     MessageBoxDefaultButton.Button2)
+
+        If closeResult = DialogResult.Yes Then
+            Me.Close()
+        End If
+    End Sub
 End Class
