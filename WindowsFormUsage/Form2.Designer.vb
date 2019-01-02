@@ -33,14 +33,14 @@ Partial Class Form2
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -148,6 +148,37 @@ Partial Class Form2
         Me.Panel3.Size = New System.Drawing.Size(776, 180)
         Me.Panel3.TabIndex = 1
         '
+        'TextBox10
+        '
+        Me.TextBox10.Enabled = False
+        Me.TextBox10.Location = New System.Drawing.Point(7, 141)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(121, 19)
+        Me.TextBox10.TabIndex = 3
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(7, 60)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 20)
+        Me.ComboBox2.TabIndex = 2
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(7, 19)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 20)
+        Me.ComboBox1.TabIndex = 0
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(7, 101)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(121, 19)
+        Me.TextBox9.TabIndex = 2
+        '
         'Panel4
         '
         Me.Panel4.Location = New System.Drawing.Point(12, 390)
@@ -170,6 +201,7 @@ Partial Class Form2
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(245, 145)
         Me.ListView1.TabIndex = 1
+        Me.ListView1.TabStop = False
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
         'Label1
@@ -181,37 +213,6 @@ Partial Class Form2
         Me.Label1.Size = New System.Drawing.Size(77, 19)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ListView"
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(7, 101)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(121, 19)
-        Me.TextBox9.TabIndex = 0
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(7, 19)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 20)
-        Me.ComboBox1.TabIndex = 1
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(7, 60)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 20)
-        Me.ComboBox2.TabIndex = 2
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Enabled = False
-        Me.TextBox10.Location = New System.Drawing.Point(7, 141)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(121, 19)
-        Me.TextBox10.TabIndex = 3
         '
         'Form2
         '

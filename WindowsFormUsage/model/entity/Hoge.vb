@@ -8,4 +8,5 @@
     Public Property h6 As String
     Public Property h7 As String
     Public Property h8 As String
+    Public Property h9 As String
 End Class
